@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import "./AboutSolution1.css";
-import WOW from "wowjs";
+import { WOW } from "wowjs";
 import Splitting from "splitting";
 import solutionImg from "../../../assets/images/solutionImg1.png";
 
 const AboutSolution1 = () => {
   useEffect(() => {
-    new WOW.WOW().init();
+    new WOW().init();
     Splitting();
     return () => {
       document.body.classList.remove("no-scroll");

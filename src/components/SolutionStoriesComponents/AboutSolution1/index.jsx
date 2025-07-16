@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import "./AboutSolution1.css";
-import WOW from "wowjs";
+import { WOW } from "wowjs";
 import Splitting from "splitting";
 
 const AboutSolution1 = ({ aboutSolution1Data, hideAuthor = false }) => {
   useEffect(() => {
-    new WOW.WOW().init();
+    new WOW().init();
     Splitting();
     return () => {
       document.body.classList.remove("no-scroll");

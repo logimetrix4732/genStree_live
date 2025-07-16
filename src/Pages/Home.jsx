@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import WOW from "wowjs";
+import { WOW } from "wowjs";
 import Splitting from "splitting";
 import NavBar from "../components/NavBar";
 import Dashboard from "../components/Dashboard";
@@ -14,7 +14,7 @@ import "../styles/navigation.css";
 
 const Home = () => {
   useEffect(() => {
-    new WOW.WOW().init();
+    new WOW().init();
     Splitting();
     return () => {
       document.body.classList.remove("no-scroll");

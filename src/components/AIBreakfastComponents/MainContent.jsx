@@ -25,7 +25,7 @@ import {
   Bolt as ZapIcon,
 } from "@mui/icons-material";
 import { keyframes } from "@emotion/react";
-import WOW from "wowjs";
+import { WOW } from "wowjs";
 import "animate.css";
 import { Link } from "react-router-dom";
 
@@ -64,7 +64,7 @@ const MainContent = ({ onNewsletterClick }) => {
   const [modalOpen, setModalOpen] = useState(false);
 
   useEffect(() => {
-    new WOW.WOW().init();
+    new WOW().init();
   }, []);
 
   const newsLetter = [

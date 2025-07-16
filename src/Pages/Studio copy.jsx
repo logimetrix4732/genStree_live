@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import NavBar from "../components/NavBar";
 import video02 from "../assets/videos/video02.mp4";
-import WOW from "wowjs";
+import { WOW } from "wowjs";
 import Splitting from "splitting";
 import "odometer/themes/odometer-theme-default.css";
 import Odometer from "odometer";
@@ -60,7 +60,7 @@ const Studio = () => {
     }
   }, [visible]);
   useEffect(() => {
-    new WOW.WOW().init();
+    new WOW().init();
     Splitting();
     return () => {
       document.body.classList.remove("no-scroll");
