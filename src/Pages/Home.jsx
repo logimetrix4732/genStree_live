@@ -26,7 +26,7 @@ const Home = () => {
         <div className="layer"> </div>
         {/* end layer */}
         <div className="inner">
-          <h5>Social Share </h5>
+          <h5>Social media </h5>
           <ul>
             <li>
               <a href="#">
