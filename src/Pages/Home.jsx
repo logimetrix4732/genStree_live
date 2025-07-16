@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { WOW } from "wowjs";
+import WOW from "wowjs";
 import Splitting from "splitting";
 import NavBar from "../components/NavBar";
 import Dashboard from "../components/Dashboard";
@@ -20,6 +20,7 @@ const Home = () => {
       document.body.classList.remove("no-scroll");
     };
   }, []);
+
   return (
     <React.Fragment>
       <div className="social-media">
